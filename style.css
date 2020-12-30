@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.bg {
+    background: url('https://static.bangkokpost.com/media/content/dcx/2020/04/24/3611855.jpg') 
+    no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: calc(100vh + 60px);
+    width: calc(100vw + 60px);
+    z-index: -1;
+    filter: blur(0px);
+  /* center center is bg position, cover is bg-size. clarified by slash*/ 
+}
+
+.loader {
+    font-size: 50px;
+    color: #fff;
+}
+@media (max-width: 810px) {
+    .loader {
+        display: flex;
+        text-align: center;
+    }
+}
